@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <title>My Page</title>
+</head>
+
+<body>
+  <header>
+    <a href="#introduction">intro</a>
+    <a href="#who">who</a>
+    <a href="#skill">skill</a>
+    <a href="#favorite">favorite</a>
+    <a href="#contact">contact</a>
+  </header>
+  <section class="introduction" id="introduction">
+    <h1>I'm Cheoljin!</h1>
+    <p> 반가워요! 제가 누군지 알고 싶으신가요? </p>
+    <div class="scroll-downs">
+      <div class="mouse">
+        <div class="scroller"></div>
+      </div>
+      <div class="scroll-mesage">
+        <span>SCROLL</span>
+      </div>
+    </div>
+  </section>
+  <main>
+    <section class="who" id="who">
+      <h1>간단한 소개</h1>
+      <div class="profile">
+        <img src="./assets/jeju2.jpeg" alt="">
+        <div class="profile-description">
+          <h2>전기직에서 개발자로!</h2>
+          <p>2년의 시간동안 전기직으로 건축회사에서 일을 하다가 <br>챗바퀴 도는 일상이 아닌 새로움을 꿈꾸게 됐습니다. <br>그래서 <a
+              href="https://youtu.be/cpEeqACsF_Q" aria-label="인터랙티브 디벨로퍼 영상">프론트엔드 개발자</a>라는 새로운 도전을
+            해보려고 합니다.<br>
+            3개월이라는 시간, 행복하게 함께 했으면 좋겠습니다.</p>
+        </div>
+      </div>
+    </section>
+    <section class="skill" id="skill">
+      <h1>My Skill!🧑🏻‍💻</h1>
+      <div class="skills">
+        <div class="skill-form">
+          <img src="./assets/html5.png" alt="html5">
+          <h2>HTML</h2>
+        </div>
+        <div class="skill-form">
+          <img src="./assets/css3.png" alt="css3">
+          <h2>CSS</h2>
+        </div>
+        <div class="skill-form">
+          <img src="./assets/js.png" alt="javascript">
+          <h2>JAVASCRIPT</h2>
+        </div>
+      </div>
+    </section>
+    <section class="favorite" id="favorite">
+      <h1>My Favorite❤️</h1>
+      <div class="favorite-form">
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+        <div class="slidewrap">
+          <ul class="slidelist">
+            <li>
+              <a>
+                <label for="slide3" class="left"></label>
+                <div class="favorite-card">
+                  <img src="assets/drama.jpeg">
+                  <h2>슬기로운 힐링, 드라마</h2>
+                  <p>소소한 힐링이 되는 드라마를 좋아합니다.</p>
+                </div>
+                <label for="slide2" class="right"></label>
+              </a>
+            </li>
+            <li>
+              <a>
+                <label for="slide1" class="left"></label>
+                <div class="favorite-card">
+                  <img src="assets/drama2.jpeg">
+                  <h2>짜릿한, 스릴러&법정물</h2>
+                  <p>스릴러나 법 관련된 소설, 영화도 좋아합니다.</p>
+                </div>
+                <label for="slide3" class="right"></label>
+              </a>
+            </li>
+            <li>
+              <a>
+                <label for="slide2" class="left"></label>
+                <div class="favorite-card">
+                  <img src="assets/jeju1.jpeg">
+                  <h2>소확행, 여행</h2>
+                  <p>맛있는거 많이 먹고, 예쁜 것 많이보는 힐링여행 사랑해요.</p>
+                </div>
+                <label for="slide1" class="right"></label>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="contact" id="contact">
+    <h1>제가 더 궁금하시다면?</h1>
+    <div class="contact-wrap">
+      <div class="personal-information">
+        <dl>
+          <dt>Email</dt>
+          <dd>toto006521@gmail.com</dd>
+          <dt>Phone</dt>
+          <dd>+82 10 5670 6553</dd>
+        </dl>
+      </div>
+      <div class="links">
+        <a href="https://velog.io/@jun_n3" target="_blank" class="velog">
+          <i class="fab fa-blogger-b fa-3x" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/JUCHEOLJIN" target="_blank" class="github">
+          <i class="fab fa-github-square fa-3x" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+
+  </footer>
+  <script src="https://kit.fontawesome.com/983f1345cd.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
