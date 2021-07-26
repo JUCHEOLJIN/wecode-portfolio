@@ -425,6 +425,7 @@ section {
   }
 }
 
+/* 의도치 않게 넣게 된 코드... 어떻게 조치하면 좋을지 고민 중 */
 @media screen and (max-width: 768px) {
   .header__item:hover {
     background-color: #8ab8fc;
