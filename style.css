@@ -35,7 +35,7 @@ section {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -48,21 +48,37 @@ section {
 .header__logo {
   color: #fff;
   font-size: 24px;
+  text-align: left;
 }
 
+.header__menu {
+  display: none;
+  flex-direction: column;
+}
+
+.header__menu.active {
+  display: flex;
+}
 .header__item {
   color: #fff;
   font-size: 20px;
-  margin-right: 12px;
+  border-bottom: 1px #fff solid;
+  text-align: center;
+  transition: all 300ms ease-in;
 }
 
-.header--hidden {
-  display: none;
+.header__item:hover {
+  transform: scale(1.1);
+  background-color: #8ab8fc;
 }
 
 .header__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
   color: #fff;
-  font-size: 20px;
+  font-size: 21px;
+  transform: translate(-50%, 50%);
 }
 
 /* 맨 초기 페이지 관련 */
@@ -77,6 +93,7 @@ section {
   font-size: 24px;
   color: #fff;
 }
+
 .introduction h1 {
   position: absolute;
   top: 50%;
@@ -265,6 +282,31 @@ section {
 @media screen and (min-width: 768px) {
   .title {
     font-size: 40px;
+  }
+
+  /* header */
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header__menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header__item {
+    margin-right: 12px;
+    border: none;
+  }
+
+  .header__item:hover {
+    background-color: #2b7df8;
+    color: #8ab8fc;
+  }
+
+  .header__toggle {
+    display: none;
   }
 
   /* home */
