@@ -56,7 +56,7 @@ section {
   border-radius: 50%;
   pointer-events: none;
   transition: width 300ms ease-in, height 300ms ease-in;
-  backdrop-filter: sepia(20%);
+  backdrop-filter: brightness(1.5);
   background-size: cover;
 }
 
