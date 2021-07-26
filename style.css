@@ -7,16 +7,19 @@
 
 body {
   font-family: "Noto Sans KR", sans-serif;
+  cursor: none;
 }
 
 a {
   text-decoration: none;
+  cursor: none;
 }
 
 button {
   outline: none;
   border: none;
   background: transparent;
+  cursor: none;
 }
 
 section {
@@ -45,6 +48,23 @@ section {
   text-align: center;
 }
 
+.cursor {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #2b7df8;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 300ms ease-in, height 300ms ease-in;
+  backdrop-filter: sepia(20%);
+  background-size: cover;
+}
+
+.cursor--grow {
+  background-color: #8ab8fc;
+  z-index: -1;
+}
+
 .header__logo {
   color: #fff;
   font-size: 24px;
@@ -69,16 +89,15 @@ section {
 
 .header__item:hover {
   transform: scale(1.1);
-  background-color: #8ab8fc;
 }
 
 .header__toggle {
   position: absolute;
   top: 0;
   right: 0;
+  padding: 16px;
   color: #fff;
   font-size: 21px;
-  transform: translate(-50%, 50%);
 }
 
 /* 맨 초기 페이지 관련 */
@@ -288,6 +307,16 @@ section {
   .header {
     flex-direction: row;
     justify-content: space-between;
+    padding: 0px 16px;
+  }
+
+  .cursor--grow {
+    width: 6em;
+    height: 6em;
+  }
+
+  .header__logo {
+    font-size: 36px;
   }
 
   .header__menu {
@@ -296,13 +325,8 @@ section {
   }
 
   .header__item {
-    margin-right: 12px;
     border: none;
-  }
-
-  .header__item:hover {
-    background-color: #2b7df8;
-    color: #8ab8fc;
+    padding: 16px;
   }
 
   .header__toggle {
@@ -398,5 +422,11 @@ section {
   .contact__copyright {
     margin-right: 5%;
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__item:hover {
+    background-color: #8ab8fc;
   }
 }
