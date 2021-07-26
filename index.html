@@ -1,135 +1,151 @@
 <!DOCTYPE html>
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./style.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
-  <title>My Page</title>
-</head>
-
-<body>
-  <header>
-    <a href="#introduction">intro</a>
-    <a href="#who">who</a>
-    <a href="#skill">skill</a>
-    <a href="#favorite">favorite</a>
-    <a href="#contact">contact</a>
-  </header>
-  <section class="introduction" id="introduction">
-    <h1>I'm Cheoljin!</h1>
-    <p> 반가워요! 제가 누군지 알고 싶으신가요? </p>
-    <div class="scroll-downs">
-      <div class="mouse">
-        <div class="scroller"></div>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/983f1345cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>My Page-con</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <i class="fas fa-cubes"></i>
       </div>
-      <div class="scroll-mesage">
-        <span>SCROLL</span>
-      </div>
-    </div>
-  </section>
-  <main>
-    <section class="who" id="who">
-      <h1>간단한 소개</h1>
-      <div class="profile">
-        <img src="./assets/jeju2.jpeg" alt="">
-        <div class="profile-description">
-          <h2>전기직에서 개발자로!</h2>
-          <p>2년의 시간동안 전기직으로 건축회사에서 일을 하다가 <br>챗바퀴 도는 일상이 아닌 새로움을 꿈꾸게 됐습니다. <br>그래서 <a
-              href="https://youtu.be/cpEeqACsF_Q" aria-label="인터랙티브 디벨로퍼 영상">프론트엔드 개발자</a>라는 새로운 도전을
-            해보려고 합니다.<br>
-            3개월이라는 시간, 행복하게 함께 했으면 좋겠습니다.</p>
-        </div>
+      <nav class="header__menu">
+        <a href="#introduction" class="header__item">INTRO</a>
+        <a href="#about" class="header__item">ABOUT</a>
+        <a href="#skill" class="header__item">SKILL</a>
+        <a href="#favorite" class="header__item">FAVORITE</a>
+        <a href="#contact" class="header__item">CONTACT</a>
+      </nav>
+      <button type="button" class="header__toggle header--hidden">
+        <i class="fas fa-bars"></i>
+      </button>
+    </header>
+    <section class="introduction" id="introduction">
+      <h1>JU CHEOL JIN</h1>
+      <span>FRONTEND</span>
+      <div class="introduction__circle">
+        <div class="wave"></div>
       </div>
     </section>
-    <section class="skill" id="skill">
-      <h1>My Skill!🧑🏻‍💻</h1>
-      <div class="skills">
-        <div class="skill-form">
-          <img src="./assets/html5.png" alt="html5">
-          <h2>HTML</h2>
+    <main class="main">
+      <section class="about" id="about">
+        <h1 class="about__title title">ABOUT</h1>
+        <img src="assets/profile.jpeg" class="about__profile" />
+        <h2 class="about__sub-title">
+          "안녕하세요! 전기 기술자에서 프론트엔드 개발자로 전향을 꿈꾸는
+          주철진입니다.""
+        </h2>
+        <p class="about__description">
+          저는 평소 사회에 좋은 영향을 주는 사람이고 싶었습니다. 다양한 활동들을
+          하면서 지냈지만 한계가 많았고 전기 기술자로서 일을 하게 됐습니다.
+          선택을 후회하지는 않았지만 반복되는 일상에 보람을 느끼기 힘들었습니다.
+          저에게는 칼퇴, 안정적인 월급이 전부가 아니었기 때문입니다. 그러다 웹
+          프로그래밍에 대해서 흥미를 가지게 됐습니다.
+          <span
+            >개발은 무궁무진한 가능성으로 사회에 좋은 영향을 줄 수 있는 강력한
+            길이라는 생각이 들었기 때문입니다.
+          </span>
+          <br />
+          개발자는 끊임 없이 공부하며 발전해나가는 사람이라고 생각합니다.
+          그렇기에 개발자로서 성장하며 사회에 좋은 영향을 줄 수 있는 사람이 되고
+          싶습니다.
+        </p>
+      </section>
+      <section class="skill" id="skill">
+        <h1 class="skill__title title">TECH SKILLS</h1>
+        <div class="skill__skills">
+          <div class="skill__card">
+            <i class="fab fa-html5"></i>
+            <h2 class="skill__sub-title">HTML5</h2>
+            <p class="skill__description">
+              정적인 웹 페이지를 만들 수 있습니다.<br />
+              웹 표준에 관심이 많습니다.<br />
+              Semantic 하게 작성할 수 있습니다.
+            </p>
+          </div>
+          <div class="skill__card">
+            <i class="fab fa-css3-alt"></i>
+            <h2 class="skill__sub-title">CSS3</h2>
+            <p class="skill__description">
+              BEM 방법론을 적용할 수 있습니다.<br />
+              Keyframes를 활용한 애니메이션 기법을 활용할 수 있습니다.<br />
+              반응형 웹을 제작할 수 있습니다.
+            </p>
+          </div>
+          <div class="skill__card">
+            <i class="fab fa-js-square"></i>
+            <h2 class="skill__sub-title">JavaScript</h2>
+            <p class="skill__description">
+              ES6 + 문법을 사용할 수 있습니다. <br />
+              간단한 게임을 제작할 수 있습니다.<br />
+              동적인 페이지를 구성할 수 있습니다.
+            </p>
+          </div>
         </div>
-        <div class="skill-form">
-          <img src="./assets/css3.png" alt="css3">
-          <h2>CSS</h2>
+      </section>
+      <section class="favorite" id="favorite">
+        <h1 class="favorite__title title">What I Love</h1>
+        <div class="favorite__contents">
+          <div class="favorite__card">
+            <img src="assets/computer-cat.jpeg" />
+            <h2 class="favorite__sub-title">영화 & 드라마 감상</h2>
+            <p class="favorite__description">
+              메세지를 담은 영화나 드라마를 보는 것을 좋아합니다. 생각을 곁들여
+              감상을 끝낸 후에 오는 여운이 짜릿해요.
+            </p>
+          </div>
+          <div class="favorite__card">
+            <img src="assets/coffee.jpeg" />
+            <h2 class="favorite__sub-title">커피와 여유</h2>
+            <p class="favorite__description">
+              저에게 커피는 생명수입니다. 산미가 적은 원두를 선호하고 커피와
+              함께 여유를 즐기는 것을 좋아해요. 맛있는 원두 추천은 항상
+              좋습니다.
+            </p>
+          </div>
+          <div class="favorite__card">
+            <img src="assets/food.jpeg" />
+            <h2 class="favorite__sub-title">맛있는 음식</h2>
+            <p class="favorite__description">
+              맛있는 음식을 먹으러 다니는 것을 좋아해요. 여행도 좋아하는데 그
+              이유의 대부분일만큼? 특히, 좋아하는 사람들과 먹는 음식은 큰 행복을
+              준다고 생각합니다.
+            </p>
+          </div>
         </div>
-        <div class="skill-form">
-          <img src="./assets/js.png" alt="javascript">
-          <h2>JAVASCRIPT</h2>
-        </div>
-      </div>
-    </section>
-    <section class="favorite" id="favorite">
-      <h1>My Favorite❤️</h1>
-      <div class="favorite-form">
-        <input type="radio" name="slide" id="slide1" checked>
-        <input type="radio" name="slide" id="slide2">
-        <input type="radio" name="slide" id="slide3">
-        <div class="slidewrap">
-          <ul class="slidelist">
-            <li>
-              <a>
-                <label for="slide3" class="left"></label>
-                <div class="favorite-card">
-                  <img src="assets/drama.jpeg">
-                  <h2>슬기로운 힐링, 드라마</h2>
-                  <p>소소한 힐링이 되는 드라마를 좋아합니다.</p>
-                </div>
-                <label for="slide2" class="right"></label>
-              </a>
-            </li>
-            <li>
-              <a>
-                <label for="slide1" class="left"></label>
-                <div class="favorite-card">
-                  <img src="assets/drama2.jpeg">
-                  <h2>짜릿한, 스릴러&법정물</h2>
-                  <p>스릴러나 법 관련된 소설, 영화도 좋아합니다.</p>
-                </div>
-                <label for="slide3" class="right"></label>
-              </a>
-            </li>
-            <li>
-              <a>
-                <label for="slide2" class="left"></label>
-                <div class="favorite-card">
-                  <img src="assets/jeju1.jpeg">
-                  <h2>소확행, 여행</h2>
-                  <p>맛있는거 많이 먹고, 예쁜 것 많이보는 힐링여행 사랑해요.</p>
-                </div>
-                <label for="slide1" class="right"></label>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="contact" id="contact">
-    <h1>제가 더 궁금하시다면?</h1>
-    <div class="contact-wrap">
-      <div class="personal-information">
-        <dl>
-          <dt>Email</dt>
-          <dd>toto006521@gmail.com</dd>
-          <dt>Phone</dt>
-          <dd>+82 10 5670 6553</dd>
-        </dl>
-      </div>
-      <div class="links">
+      </section>
+    </main>
+    <footer class="contact" id="contact">
+      <div class="divider"></div>
+      <div class="contact__links">
+        <a href="mailto:toto006521@gmail.com" target="_blank" class="email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:01056706553" target="_blank" class="email">
+          <i class="fas fa-phone-square-alt"></i>
+        </a>
         <a href="https://velog.io/@jun_n3" target="_blank" class="velog">
-          <i class="fab fa-blogger-b fa-3x" aria-hidden="true"></i>
+          <i class="fab fa-blogger-b"></i>
         </a>
         <a href="https://github.com/JUCHEOLJIN" target="_blank" class="github">
-          <i class="fab fa-github-square fa-3x" aria-hidden="true"></i>
+          <i class="fab fa-github-square"></i>
         </a>
       </div>
-    </div>
-
-  </footer>
-  <script src="https://kit.fontawesome.com/983f1345cd.js" crossorigin="anonymous"></script>
-</body>
-
+      <p class="contact__copyright">
+        Designed & Developed By <span>Ju Cheol Jin</span>
+      </p>
+    </footer>
+  </body>
 </html>
