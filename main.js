@@ -20,7 +20,7 @@ menu.addEventListener("click", (event) => {
 
 addEventListener("load", (event) => {
   const cursorRect = cursor.getBoundingClientRect();
-  const cursorHalfWidth = cursorRect.width / 2;
+  const cursorHalfWidth = cursorRect.width / 2 + 12;
   const cursorHalfHeight = cursorRect.height / 2;
 
   document.addEventListener("mousemove", (event) => {
@@ -29,6 +29,14 @@ addEventListener("load", (event) => {
     cursor.style.transform = `translate(${X - cursorHalfWidth}px, ${
       Y - cursorHalfHeight
     }px)`;
+  });
+
+  document.addEventListener("mouseleave", (event) => {
+    cursor.style.visibility = "hidden";
+  });
+
+  document.addEventListener("mouseover", (event) => {
+    cursor.style.visibility = "visible";
   });
 });
 
