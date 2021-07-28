@@ -60,8 +60,9 @@ section {
   border: 2px solid #2b7df8;
   border-radius: 50%;
   pointer-events: none;
-  transition: width 300ms ease-in, height 300ms ease-in;
   backdrop-filter: brightness(1.5);
+  transition: width 300ms ease-in, height 300ms ease-in;
+  visibility: hidden;
 }
 
 .cursor--grow {
@@ -314,6 +315,10 @@ section {
     flex-direction: row;
     justify-content: space-between;
     padding: 0px 16px;
+  }
+
+  .cursor {
+    visibility: visible;
   }
 
   .cursor--grow {
