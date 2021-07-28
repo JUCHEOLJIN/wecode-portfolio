@@ -32,9 +32,7 @@ addEventListener("load", (event) => {
   });
 
   document.addEventListener("mouseleave", (event) => {
-    if (window.innerWidth > 480) {
-      cursor.style.visibility = "hidden";
-    }
+    cursor.style.visibility = "hidden";
   });
 
   document.addEventListener("mouseover", (event) => {
