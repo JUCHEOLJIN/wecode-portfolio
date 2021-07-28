@@ -32,11 +32,15 @@ addEventListener("load", (event) => {
   });
 
   document.addEventListener("mouseleave", (event) => {
-    cursor.style.visibility = "hidden";
+    if (window.innerWidth > 480) {
+      cursor.style.visibility = "hidden";
+    }
   });
 
   document.addEventListener("mouseover", (event) => {
-    cursor.style.visibility = "visible";
+    if (window.innerWidth > 480) {
+      cursor.style.visibility = "visible";
+    }
   });
 });
 
