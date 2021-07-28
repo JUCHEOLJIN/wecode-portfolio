@@ -16,6 +16,8 @@ menu.addEventListener("click", (event) => {
   }
 });
 
+// 커서 관련
+
 addEventListener("load", (event) => {
   const cursorRect = cursor.getBoundingClientRect();
   const cursorHalfWidth = cursorRect.width / 2;
@@ -44,4 +46,16 @@ toggleBtn.addEventListener("mouseover", () => {
 
 toggleBtn.addEventListener("mouseleave", () => {
   cursor.classList.remove("cursor--grow");
+});
+
+// 스크롤 관련
+
+const introName = document.querySelector(".introduction__name");
+const introPosition = document.querySelector(".introduction__position");
+
+document.addEventListener("scroll", () => {
+  let moveLeft = -scrollY;
+  let moveRight = scrollY;
+  introName.style.transform = `translate(${moveLeft}px, -50%)`;
+  introPosition.style.transform = `translateX(${moveRight}px)`;
 });
